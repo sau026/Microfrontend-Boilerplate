@@ -29,20 +29,8 @@ Products App (Remote) - Product listing component using pure Webpack
 
 Each application can be developed, tested, and deployed independently while working together seamlessly in the shell application.
 🏗️ Architecture
-┌─────────────────────────────────────────────────────┐
-│              Shell App (Port 3000)                  │
-│                    CRACO + CRA                      │
-├─────────────────────────────────────────────────────┤
-│  ┌──────────────────────────────────────────────┐  │
-│  │     Header Micro Frontend (Port 3001)        │  │
-│  │           Pure Webpack 5                     │  │
-│  └──────────────────────────────────────────────┘  │
-│                                                     │
-│  ┌──────────────────────────────────────────────┐  │
-│  │   Products Micro Frontend (Port 3002)        │  │
-│  │           Pure Webpack 5                     │  │
-│  └──────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────┘
+<img width="417" height="285" alt="image" src="https://github.com/user-attachments/assets/d1119b46-c3ee-4ffb-9a9f-027adc998890" />
+
 
         Shared Dependencies (React, React-DOM, etc.)
 ✨ Features
@@ -104,42 +92,7 @@ Header Standalone: http://localhost:3001
 Products Standalone: http://localhost:3002
 
 📁 Project Structure
-micro-frontend-project/
-├── shell-app/                    # Host application (CRACO)
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── App.js               # Main app with routing
-│   │   ├── App.css
-│   │   ├── index.js             # Dynamic import
-│   │   ├── bootstrap.js         # Actual React render
-│   │   └── ErrorBoundary.js     # Error handling
-│   ├── craco.config.js          # Module Federation config
-│   └── package.json
-│
-├── header-app/                   # Header micro frontend (Webpack)
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Header.js        # Header component
-│   │   │   └── Header.css
-│   │   ├── index.js             # Dynamic import
-│   │   └── bootstrap.js         # Standalone mode
-│   ├── webpack.config.js        # Module Federation config
-│   └── package.json
-│
-└── products-app/                 # Products micro frontend (Webpack)
-    ├── public/
-    │   └── index.html
-    ├── src/
-    │   ├── components/
-    │   │   ├── ProductList.js   # Products component
-    │   │   └── ProductList.css
-    │   ├── index.js             # Dynamic import
-    │   └── bootstrap.js         # Standalone mode
-    ├── webpack.config.js        # Module Federation config
-    └── package.json
+<img width="402" height="543" alt="image" src="https://github.com/user-attachments/assets/b66340ac-fbc3-479e-9331-9d6bd61fde29" />
 
 
 
