@@ -1,5 +1,6 @@
 🚀 Micro Frontend with Module Federation
 A production-ready micro frontend architecture using Webpack 5 Module Federation, demonstrating how to build independently deployable frontend applications that work together seamlessly.
+
 <img width="1329" height="678" alt="image" src="https://github.com/user-attachments/assets/c5ca0c61-2db0-491c-991d-f40c93d46b33" />
 
 📋 Table of Contents
